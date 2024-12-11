@@ -6,6 +6,8 @@ const dotenv = require("dotenv");
 const initDBConnection = require("./config/db");
 const recommendationRoutes = require("./routes/recommendationRoutes");
 
+app.use(cors({ origin: '*' }));
+
 const knowledgeHubRoutes = require("./routes/knowledgeHubRoutes");
 const careerRoutes = require("./routes/careerRoutes");
 const authRouter = require("./routes/auth");
