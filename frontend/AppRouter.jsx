@@ -19,6 +19,7 @@ function AppRouter() {
         <Route path="/knowledgeHub" element={<KnowledgeHubComponent />} />
         <Route path="/review" element={<UserReviews />} />
         <Route path="/profile" element={<UserProfile />} />
+        <Route path="*" element={<AuthComponent />} />
       </Routes>
     </Router>
   );
